@@ -22,8 +22,10 @@ router.get('/:GUID/sendmany', (req, res) => {
     return res.status(500).json({error: 'Unable to parse recipients'})
   }
 
+  if (!Object.keys(parsed).length) return res.json({ ok: false, error: 'Empty payment object' })
+
   res.json({
-    message: 'Sent to multiple', tx_hash: 123456679
+    success: true, message: 'Sent to multiple', txid: 123456679
   })
 })
 
