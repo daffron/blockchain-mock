@@ -1,0 +1,23 @@
+{
+  "name": "blockchain-mock",
+  "version": "0.0.1",
+  "description": "A basic service to mock blockchain.info's wallet api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daffron/blockchain-mock.git"
+  },
+  "author": "Jack Daffron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daffron/blockchain-mock/issues"
+  },
+  "homepage": "https://github.com/daffron/blockchain-mock#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
